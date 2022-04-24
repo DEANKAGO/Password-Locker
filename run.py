@@ -1,3 +1,6 @@
+from random import randint
+from secrets import choice
+import string
 from user import User
 from credentials import Credentials
 
@@ -73,4 +76,13 @@ def main():
           print("\n")
           print("generate password (G) or create new password(C)")
           decision = input()
-          
+          if decision == "G":
+            characters = string.ascii_letters + string.digits
+            accountpassword = "".join(choice(characters) for x in range(randint(6,16)))
+            print(f"password: {accountpassword}")
+          elif decision == "C":
+            print("Enter Password")
+            accountpassword = input()
+          else:
+            print("Please put in valid information")
+              
