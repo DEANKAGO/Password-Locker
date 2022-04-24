@@ -12,4 +12,7 @@ class Credentials:
     Credentials.accounts.append(self)  
 
   def delete_account(self):
-      
+    Credentials.accounts.remove(self)
+  @classmethod
+
+  def show_accounts(cls):  
