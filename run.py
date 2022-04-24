@@ -46,6 +46,8 @@ def main():
       lastname = input()
       print("Set Username")
       username = input()
-      
+      print("Set Password")
+      userpassword = input()
+
 
                        
