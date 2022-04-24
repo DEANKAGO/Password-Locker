@@ -15,4 +15,12 @@ class Credentials:
     Credentials.accounts.remove(self)
   @classmethod
 
-  def show_accounts(cls):  
+  def show_accounts(cls): 
+    for account in cls.accounts:
+      return cls.accounts 
+  @classmethod
+
+  def find_by_number(cls, number):
+    for account in cls.accounts:
+      if account.accountusername == number:
+        return account      
