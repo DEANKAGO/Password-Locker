@@ -10,11 +10,11 @@ class User:
     self.username = username
     self.password = password
 
-  def save_user(self):
-    User.userslist.append(self)
+  # def save_user(self):
+  #   User.userslist.append(self)
 
-  def delete_user(self):
-    User.userslist.remove(self)
+  # def delete_user(self):
+  #   User.userslist.remove(self)
   # @classmethod
 
   # def show_users(cls)  
