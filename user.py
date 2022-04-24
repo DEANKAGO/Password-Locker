@@ -17,4 +17,18 @@ class User:
     User.userslist.remove(self)
   @classmethod
 
-  def show_users(cls)  
+  def show_users(cls):
+    return cls.userslist
+  @classmethod
+
+  def find_by_number(cls,number):
+    for user in cls.userslist:
+      if user.password == number:
+        return user
+  @classmethod
+
+  def user_exist(cls,number):
+    for user in cls.userslist:
+      if user.username == number:
+        return True
+        return False            
