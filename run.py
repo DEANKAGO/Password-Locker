@@ -45,5 +45,7 @@ def main():
       print("Enter Last Name")
       lastname = input()
       print("Set Username")
+      username = input()
+      
 
                        
