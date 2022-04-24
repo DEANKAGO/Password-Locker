@@ -62,7 +62,15 @@ def main():
       if find_user(loginPassword):
         print("\n")
         print("You can create multiple accounts (AC) and also view them (VC)")
-        print
-
-
-                       
+        print("AC or VC")
+        choose =input()
+        print("\n")
+        if choose == "AC":
+          print("Add your Account")
+          accountusername = loginUsername
+          print("Account Name")
+          accountname = input()
+          print("\n")
+          print("generate password (G) or create new password(C)")
+          decision = input()
+          
