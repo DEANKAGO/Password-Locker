@@ -48,6 +48,21 @@ def main():
       username = input()
       print("Set Password")
       userpassword = input()
+      save_user(create_user(firstname,lastname,username,userpassword))
+      print("Account created successfully")
+      print(f"Name:{firstname} {lastname} \nUsername: {username} \nPassword: {userpassword}")
+      print("\nFill in your details to LogIn")
+      print("\n \n")
+
+    elif option == "LG":
+      print("username")
+      loginUsername = input()
+      print("password")  
+      loginPassword = input()
+      if find_user(loginPassword):
+        print("\n")
+        print("You can create multiple accounts (AC) and also view them (VC)")
+        print
 
 
                        
