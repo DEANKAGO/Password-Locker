@@ -36,4 +36,13 @@ def show_accounts():
 def main():
   while True:
     print("Welcome to password Locker write SU or LG to start")
-               
+    print("SU or LG")
+    option = input()
+    if option == "SU":
+      print("Create Account")
+      print("Enter First Name")
+      firstname = input()
+      print("Enter Last Name")
+      lastname = input()
+      
+                       
