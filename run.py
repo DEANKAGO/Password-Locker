@@ -86,7 +86,7 @@ def main():
                 accountusername = loginUsername
                 if choose == "AC":
                     print("Add your Account")
-                    accountusername = accountusername
+                    accountusername = loginUsername
                     print("Account Name")
                     accountname = input()
                     print("Account Username")
