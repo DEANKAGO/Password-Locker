@@ -5,14 +5,14 @@ import string
 from user import User
 from credentials import Credentials
 
-
+accountusername = ""
 def create_user(firstname, lastname, username, userpassword):
     newuser = User(firstname, lastname, username, userpassword)
     return newuser
 
 
 def save_user(user):
-    user.save_user()
+    user.save_user(user)
 
 
 def delete_user(user):
@@ -86,7 +86,6 @@ def main():
                 accountusername = loginUsername
                 if choose == "AC":
                     print("Add your Account")
-                    accountusername = loginUsername
                     print("Account Name")
                     accountname = input()
                     print("Account Username")
@@ -114,7 +113,8 @@ def main():
                     if find_account(accountusername):
                         print("Here are your created accounts")
                         for user in show_accounts():
-                            print(
+                            if accountusername == user.accountusername:
+                              print(
                                 f"Account: {user.accountname} \nUsername: {user.accountusername} \nPassword: {user.accountpassword} \n")
                     else:
                         print("Invalid Information!")

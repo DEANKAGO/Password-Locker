@@ -17,11 +17,11 @@ class User:
     self.username = username
     self.password = password
 
-  def save_user(self):
+  def save_user(self, user):
     """
     method for saving user information
     """
-    User.userslist.append(self)
+    User.userslist.append(user)
 
   def delete_user(self):
     """
@@ -41,6 +41,6 @@ class User:
   @classmethod
   def user_exist(cls,number):
     for user in cls.userslist:
-      if user.username == number:
+      if user.userslist == number:
         return True
         return False            
